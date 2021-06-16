@@ -1,0 +1,35 @@
+.container {
+    padding: 2%;
+    /*max-width: 500px;*/
+    font-family: sans-serif;
+}
+
+.nav-links {
+    background-color: white;
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.nav-link-item {
+    padding-right: 2rem;
+}
+.nav-link-text {
+    color: black;
+}
+
+.footer-container {
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-text{
+    padding: 10px;
+    color: black;
+    text-align: center;
+}
+
+
+

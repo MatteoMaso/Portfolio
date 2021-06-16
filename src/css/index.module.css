@@ -1,0 +1,49 @@
+.container-intro{
+    background-color: yellow;
+}
+
+.row-intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.column-left-intro {
+    padding-left: 10%;
+    display: flex;
+    
+    flex: 1;
+    flex-direction: column;
+}
+
+.column-right-intro {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.column-large {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+}
+
+.avatar{
+    width: 250px;
+    height: 250px;
+    padding: 20px
+}
