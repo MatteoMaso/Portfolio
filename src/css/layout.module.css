@@ -1,5 +1,5 @@
 .container {
-    padding: 2%;
+    /*padding: 2%;*/
     /*max-width: 500px;*/
     font-family: sans-serif;
 }
@@ -20,7 +20,7 @@
 .footer-container {
     background-color: white;
     position: absolute;
-    bottom: 0;
+    bottom: 2;
     left: 0;
     width: 100%;
 }

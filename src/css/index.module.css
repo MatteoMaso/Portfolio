@@ -2,48 +2,94 @@
     background-color: yellow;
 }
 
-.row-intro {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
 
 
-.column-left-intro {
-    padding-left: 10%;
-    display: flex;
+@media screen and (min-width: 600px){
     
-    flex: 1;
-    flex-direction: column;
+    .row-intro {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        padding-top: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .column-left-intro {
+        padding-left: 10%;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .column-right-intro {
+        align-items: left;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .avatar {
+        width: 220px;
+        height: 220px;
+        padding-top: 0px;
+        padding-left: 40px;
+    }
+
+    .text-intro {
+        text-align: left;
+        max-width: 500px;
+    }
 }
 
-.column-right-intro {
-    padding-left: 5%;
-    padding-right: 5%;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
+@media screen and (max-width: 600px){
+    
+    .row-intro {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 98%;
+        padding-top: 2%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .column-left-intro {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .column-right-intro {
+        min-width: 400px;
+        align-items: center;
+        padding-top: 30px;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .avatar {
+        width: 220px;
+        height: 220px;
+        padding: 20px;
+    }
+
+    .text-intro {
+        text-align: left;
+    }
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
+.row-colored {
+    margin-top: 20px;
+    background-color: blue;
+    min-height: 300px;
+    width: 102vw;
+    margin-left: -2vw;
 }
 
-.column-large {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 2;
-}
-
-.avatar{
-    width: 250px;
-    height: 250px;
-    padding: 20px
+.title {
+    text-align: center;
+    margin: 100px, 0px;
 }
