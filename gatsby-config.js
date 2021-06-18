@@ -17,5 +17,21 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'MatteoMaso',
+        short_name: 'Matteo Maso - Software engineer',
+        description: 'Portfolio website of Matteo Maso - Software engineer based in Berlin',
+        lang: 'en',
+        start_url: '/',
+        background_color: '#ffffff',
+        theme_color: '#ffffff',
+        display: 'standalone',
+        icon: 'src/images/icon.png', // This path is relative to the root of the site.
+        legacy: false, // this will not add apple-touch-icon links to <head>
+      },
+      
+    },
   ],
 };

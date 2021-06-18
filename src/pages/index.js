@@ -1,9 +1,8 @@
 import * as React from "react"
 import Layout from "../components/layout"
-import { paperShadow,cvLeftColumn, littleCv, btn, rowColored, textIntro, title, avatar, rowIntro, columnLeftIntro, columnRightIntro } from "../styles/index.module.css"
+import { cvLeftColumn, littleCv, btn, rowColored, textIntro, title, avatar, rowIntro, columnLeftIntro, columnRightIntro } from "../styles/index.module.css"
 import Picture from "../images/profile.jpg" 
 import CV from "../images/cv_v2.svg" 
-import { Link } from "gatsby"
 
 const titleName = {
   fontSize: 30,
