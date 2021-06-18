@@ -1,7 +1,8 @@
 import * as React from "react"
 import Layout from "../components/layout"
-import { btn, rowColored, textIntro, title, avatar, rowIntro, columnLeftIntro, columnRightIntro } from "../styles/index.module.css"
+import { paperShadow,cvLeftColumn, littleCv, btn, rowColored, textIntro, title, avatar, rowIntro, columnLeftIntro, columnRightIntro } from "../styles/index.module.css"
 import Picture from "../images/profile.jpg" 
+import CV from "../images/cv_v2.svg" 
 import { Link } from "gatsby"
 
 const titleName = {
@@ -24,7 +25,7 @@ const textIntroStyle = {
 const whiteText = {
   fontSize: 30,
   color: "white",
-  textAlignment: "center"
+  textAlignment: "left"
 }
 
 const IndexPage = () => {
@@ -48,8 +49,13 @@ const IndexPage = () => {
     </div>
 
     <div className={rowColored} >
-      <p style={whiteText}>Take a look at my career path</p>
-      <a href="/cv" > <button className={btn}>CV</button> </a>
+      <div className={cvLeftColumn}>
+        <p style={whiteText}>Take a look at my career path</p>
+        <a href="/cv" > <button className={btn}>CV &#8594;</button> </a>
+      </div>
+      <div>
+        <img className={littleCv} alt="" src={CV}/>
+      </div>
     </div>
     </Layout>
   )
