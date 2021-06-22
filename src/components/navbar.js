@@ -48,7 +48,8 @@ const MenuLinks = styled.nav`
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 100vh;
+    height: 100%;
+    overflow: hidden;
     background: #2400A2;
     position: absolute;
     top: 0;

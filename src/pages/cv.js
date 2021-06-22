@@ -2,12 +2,12 @@ import * as React from 'react'
 import Layout from '../components/layout'
 import { cvStyle, sheets, cvContainer, btnRow, button} from '../styles/cv.module.css'
 import cv from '../images/cv_v2.svg'
-import cvPDF from '../images/cvv2.pdf'
+import cvPDF from '../images/cvv3.pdf'
 
 const CV = () => {
     return (
         <Layout pageTitle="Resume" className={cvContainer}>
-            <div style={{marginBottom: "30px"}} >
+            <div style={{marginBottom: "30px", marginTop: "90px"}} >
                 <div className={sheets} >
                     <img alt="" className={cvStyle} src={cv}></img>
                 </div>
