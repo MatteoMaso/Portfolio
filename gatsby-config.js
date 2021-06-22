@@ -5,6 +5,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-styled-components",
     {
       resolve: 'gatsby-plugin-google-gtag',
       options: {

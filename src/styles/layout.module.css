@@ -2,35 +2,6 @@
     font-family: sans-serif;
 }
 
-.nav-bar {
-    margin-top: 30px;
-    width: 100%;
-}
-
-.nav-links {
-    flex-flow: row-reverse;
-    list-style-type: none;
-    margin: 0;
-    padding-right: 100px;
-    overflow: hidden;
-    background-color: white;
-    min-height: 50px;
-}
-
-.nav-link-item {
-    padding-right: 2rem;
-    float: right;
-}
-
-.nav-link-text  {
-    color: black;
-    font-size: 20px;
-}
-
-.nav-link-text:hover {
-    color: blue;
-}
-
 
 .line-top {
     position: absolute;

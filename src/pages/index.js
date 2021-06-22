@@ -1,7 +1,7 @@
 import * as React from "react"
 import Layout from "../components/layout"
-import { cvLeftColumn, littleCv, btn, rowColored, textIntro, title, avatar, rowIntro, columnLeftIntro, columnRightIntro } from "../styles/index.module.css"
-import Picture from "../images/profile.jpg" 
+import { cvLeftColumn, littleCv, btn, rowColored, textIntro, bigName, avatar, rowIntro, columnLeftIntro, columnRightIntro } from "../styles/index.module.css"
+import Picture from "../images/profileBlue.webp" 
 import CV from "../images/cv_v2.svg" 
 
 const titleName = {
@@ -30,32 +30,32 @@ const whiteText = {
 const IndexPage = () => {
   return (
     <Layout pageTitle="Portfolio">
-    <div>
-      <p style={titleName}  className={title}>  @MatteoMaso</p>
-    </div>
-    <div className={rowIntro}>
-      <div className={columnLeftIntro}>
-        <p style={heyThere}>Hey there <span role="img" aria-label="hand waveing" >&#128075;</span></p>
-        <p style={textIntroStyle} className={textIntro} >
-          Inspired by science to improve people’s life and the
-          environment, I’m a software engineer with a wide interest
-          range and a background in fast prototyping tech solutions.
-        </p>
-      </div>
-      <div className={columnRightIntro}>
-        <img className={avatar} alt="" src={Picture}/>
-      </div>
-    </div>
-
-    <div className={rowColored} >
-      <div className={cvLeftColumn}>
-        <p style={whiteText}>Take a look at my career path</p>
-        <a href="/cv" > <button className={btn}>CV &#8594;</button> </a>
-      </div>
       <div>
-        <img className={littleCv} alt="" src={CV}/>
+        <p style={titleName}  className={bigName}>  @MatteoMaso</p>
       </div>
-    </div>
+      <div className={rowIntro}>
+        <div className={columnLeftIntro}>
+          <p style={heyThere}>Hey there <span role="img" aria-label="hand waveing" >&#128075;</span></p>
+          <p style={textIntroStyle} className={textIntro} >
+            Inspired by science to improve people’s life and the
+            environment, I’m a software engineer with a wide interest
+            range and a background in fast prototyping tech solutions.
+          </p>
+        </div>
+        <div className={columnRightIntro}>
+          <img className={avatar} alt="" src={Picture}/>
+        </div>
+      </div>
+
+      <div className={rowColored} >
+        <div className={cvLeftColumn}>
+          <p style={whiteText}>Take a look at my career path</p>
+          <a href="/cv" > <button className={btn}>CV &#8594;</button> </a>
+        </div>
+        <div>
+          <img className={littleCv} alt="" src={CV}/>
+        </div>
+      </div>
     </Layout>
   )
 }
