@@ -2,7 +2,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import { cvLeftColumn, littleCv, btn, rowColored, textIntro, bigName, avatar, rowIntro, columnLeftIntro, columnRightIntro } from "../styles/index.module.css"
 import Picture from "../images/profileBlue.webp" 
-import CV from "../images/cv.svg" 
+import CV from "../images/cvlittle.webp" 
 
 const titleName = {
   fontSize: 30,

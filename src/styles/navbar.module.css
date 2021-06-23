@@ -2,6 +2,7 @@
 @media screen and (max-width: 600px){
     .mobile-nav {
         display: flex;
+        overflow-y: hidden;
     }    
 
 

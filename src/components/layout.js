@@ -16,8 +16,8 @@ const Layout = ({pageTitle, children }) =>
             <div className={lineTop}></div>
             <Navbar></Navbar>
             {children}
-            <div className={footerContainer}>
-                <p className={footerText}> Made by Matteo Maso. Illustrations by <Link to="https://icons8.com/">icons8.com</Link>.</p>
+            <div hidden={true} className={footerContainer}>
+                <p className={footerText}> Made by Matteo Maso. Illustrations by <Link hidden={true} to="https://icons8.com/">icons8.com</Link>.</p>
             </div>
         </main>
         

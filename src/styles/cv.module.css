@@ -10,15 +10,65 @@
     width: 100%;
 }
 
+@media screen and (max-width: 600px) {
+    .sheets-container {
+        margin-top: 90px;
+        margin-bottom: 30px;
+    }
+    
+    .sheets {
+        padding: 0px;
+        width: 90%;
+        margin: 26px;
+    }
+
+    .btn-row {
+        background-color: blue;
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        z-index: 2;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+@media (min-width: 600px) {
+    .sheets-container {
+        margin-top: 8%;
+        margin-bottom: 150px;
+    }
+
+    .sheets {
+        max-width: 1050px;
+        min-height: 300px;
+        padding: 0px;
+        margin: 26px auto 0;
+        padding-bottom: 100px;
+        width: 80%;
+        margin-bottom: 200px;
+    }
+
+    .btn-row {
+        background-color: blue;
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        z-index: 2;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
 .sheets {
     background: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    margin: 26px auto 0;
-    max-width: 1050px;
-    min-height: 300px;
     padding: 0px;
     position: relative;
-    width: 80%;
 }
 
 .sheets:before, .sheets:after {
@@ -43,18 +93,6 @@
     right: -3px;
     top: 1px;
     transform: rotate(1.4deg);
-}
-
-.btn-row {
-    background-color: blue;
-    width: 100vw;
-    position: sticky;
-    bottom: 0;
-    z-index: 2;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
 }
 
 .button {

@@ -7,7 +7,7 @@ import {
 } from '../styles/navbar.module.css'
 
 const MenuIcon = styled.button`
-    position: absolute;
+    position: ${({nav}) => nav ? 'fixed' : 'absolute'};
     top: 2rem;
     right: 2rem;
     display: flex;
@@ -51,7 +51,7 @@ const MenuLinks = styled.nav`
     height: 100%;
     overflow: hidden;
     background: #2400A2;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 100%;
