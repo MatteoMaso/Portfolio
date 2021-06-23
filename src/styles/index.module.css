@@ -123,7 +123,8 @@
 }
 
 .little-cv {
-    max-width: 150px;
+    width: 180px;
+    height: 254px;
     padding: 20px;
     transform: rotate(7deg);
 }

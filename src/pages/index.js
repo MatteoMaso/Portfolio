@@ -2,7 +2,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import { cvLeftColumn, littleCv, btn, rowColored, textIntro, bigName, avatar, rowIntro, columnLeftIntro, columnRightIntro } from "../styles/index.module.css"
 import Picture from "../images/profileBlue.webp" 
-import CV from "../images/cv_v2.svg" 
+import CV from "../images/cv.svg" 
 
 const titleName = {
   fontSize: 30,
@@ -43,7 +43,7 @@ const IndexPage = () => {
           </p>
         </div>
         <div className={columnRightIntro}>
-          <img className={avatar} alt="" src={Picture}/>
+          <img className={avatar} loading="lazy" alt="" src={Picture}/>
         </div>
       </div>
 
@@ -53,7 +53,7 @@ const IndexPage = () => {
           <a href="/cv" > <button className={btn}>CV &#8594;</button> </a>
         </div>
         <div>
-          <img className={littleCv} alt="" src={CV}/>
+          <img className={littleCv} loading="lazy" alt="" src={CV}/>
         </div>
       </div>
     </Layout>
