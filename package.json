@@ -1,6 +1,6 @@
 {
   "name": "my-gatsby-site",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Matteo Maso portfolio",
   "author": "matteo maso",
@@ -15,17 +15,29 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "babel-plugin-styled-components": "^1.12.0",
-    "gatsby": "^3.6.2",
-    "gatsby-plugin-gatsby-cloud": "^2.7.1",
-    "gatsby-plugin-google-gtag": "^3.7.1",
-    "gatsby-plugin-manifest": "^3.7.1",
-    "gatsby-plugin-sharp": "^3.7.1",
-    "gatsby-plugin-sitemap": "^4.4.0",
-    "gatsby-plugin-styled-components": "^4.7.1",
+    "ansi-regex": "^6.0.1",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-styled-components": "^2.0.2",
+    "gatsby": "^4.5.2",
+    "gatsby-plugin-gatsby-cloud": "^4.6.0-next.1",
+    "gatsby-plugin-google-gtag": "^4.5.0",
+    "gatsby-plugin-manifest": "^4.5.1",
+    "gatsby-plugin-sharp": "^4.5.1",
+    "gatsby-plugin-sitemap": "^5.5.0",
+    "gatsby-plugin-styled-components": "^5.5.0",
+    "graphql": "^15.8.0",
+    "immer": "^9.0.12",
+    "postcss": "^8.4.5",
     "react": "^17.0.1",
-    "react-bootstrap": "^1.6.1",
+    "react-bootstrap": "^1.6.4",
     "react-dom": "^17.0.1",
-    "styled-components": "^5.3.0"
+    "styled-components": "^5.3.3",
+    "typescript": "^4.5.4",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/eslint-parser": "^7.16.5",
+    "eslint": "^7.5.0"
   }
 }
