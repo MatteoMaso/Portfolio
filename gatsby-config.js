@@ -4,7 +4,6 @@ module.exports = {
     siteUrl: `https://matteomaso.com`,
   },
   plugins: [
-    "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-sharp",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sitemap",
