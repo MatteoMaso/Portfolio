@@ -49,7 +49,7 @@ const IndexPage = () => {
 
       <div className={rowColored} >
         <div className={cvLeftColumn}>
-          <p style={whiteText}>Take a look at my career path</p>
+          <p style={whiteText}>Take a look at my career path PR test</p>
           <a href="/cv" > <button className={btn}>CV &#8594;</button> </a>
         </div>
         <div>
