@@ -24,7 +24,7 @@
     "gatsby-plugin-sitemap": "^5.24.0",
     "gatsby-plugin-styled-components": "^5.24.0",
     "graphql": "^16.6.0",
-    "immer": "^9.0.12",
+    "immer": "^9.0.16",
     "postcss": "^8.4.5",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
