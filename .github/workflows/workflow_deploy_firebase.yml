@@ -1,0 +1,33 @@
+name: Firebase deploy
+
+on:
+  workflow_call:
+    inputs:
+      version:
+        description: The release version or a git commit sha.
+        required: true
+        type: string
+      run_id:
+        description: The unique number for the triggered workflow.
+        required: true
+        type: string
+      project_id:
+        description: The firebase name of the website.
+        required: true
+        type: string
+      channel_id:
+        description: Channel Id = live to sent on release
+        required: false
+        type: string
+
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v2
+    - run: yarn && npm run build
+    - uses: FirebaseExtended/action-hosting-deploy@v0
+      with:
+        repoToken: '${{ secrets.GITHUB_TOKEN }}'
+        firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PERSONALWEBSITE_D0B3C }}'
+        channelId: ${{ inputs.channel_id }}
+        projectId: ${{ inputs.project_id }}
