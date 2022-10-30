@@ -13,12 +13,18 @@ jobs:
   deploy:
     needs: [test-build]
     name: Deploy
-    uses: ./.github/workflows/workflow_deploy_firebase.yml
-    with:
-      version: ${{ github.sha }}
-      run_id: github_run_${{ github.run_id }}
-      project_id: personalwebsite-d0b3c
-      channel_id: live
-    secrets:
-      access_key_id: ${{ secrets.AISIGHT_AWS_KEY_ID }}
-      secret_access_key: ${{ secrets.AISIGHT_AWS_ACCESS_KEY }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: yarn && npm run build
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          version: ${{ github.sha }}
+          run_id: github_run_${{ github.run_id }}
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PERSONALWEBSITE_D0B3C }}'
+          channelId: live
+          projectId: personalwebsite-d0b3c
+
+
+
