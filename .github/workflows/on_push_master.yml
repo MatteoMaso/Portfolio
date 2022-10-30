@@ -1,8 +1,9 @@
-name: On pull request
+name: On push to master
 
 on:
-  pull_request:
-    types: [opened, synchronize]
+  push:
+    branches:
+      - master
 
 jobs:
   test-build:
@@ -10,7 +11,6 @@ jobs:
     uses: ./.github/workflows/workflow_test.yml
 
   deploy:
-    if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     needs: [test-build]
     name: Deploy
     uses: ./.github/workflows/workflow_deploy_firebase.yml
@@ -18,6 +18,7 @@ jobs:
       version: ${{ github.sha }}
       run_id: github_run_${{ github.run_id }}
       project_id: personalwebsite-d0b3c
+      channel_id: live
     secrets:
       access_key_id: ${{ secrets.AISIGHT_AWS_KEY_ID }}
       secret_access_key: ${{ secrets.AISIGHT_AWS_ACCESS_KEY }}
