@@ -19,6 +19,3 @@ jobs:
       run_id: github_run_${{ github.run_id }}
       project_id: personalwebsite-d0b3c
       channel_id: live
-    secrets:
-      access_key_id: ${{ secrets.AISIGHT_AWS_KEY_ID }}
-      secret_access_key: ${{ secrets.AISIGHT_AWS_ACCESS_KEY }}
