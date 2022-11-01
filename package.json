@@ -17,7 +17,7 @@
   "dependencies": {
     "ansi-regex": "^6.0.1",
     "babel-plugin-styled-components": "^2.0.2",
-    "gatsby": "^4.24.4",
+    "gatsby": "^4.24.6",
     "gatsby-plugin-google-gtag": "^4.24.0",
     "gatsby-plugin-manifest": "^4.24.0",
     "gatsby-plugin-sharp": "^4.24.0",
