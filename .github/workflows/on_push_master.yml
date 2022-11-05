@@ -11,7 +11,7 @@ jobs:
   #   uses: ./.github/workflows/workflow_test.yml
 
   deploy:
-    needs: [test-build]
+    # needs: [test-build]
     name: Deploy
     uses: ./.github/workflows/workflow_deploy_firebase.yml
     with:
