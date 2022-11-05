@@ -18,8 +18,8 @@ jobs:
       run_id: github_run_${{ github.run_id }}
       channel_id: live
       project_id: personalwebsite-d0b3c
-      repo_token: '${{ secrets.GITHUB_TOKEN }}'
-      firebase_service_account: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PERSONALWEBSITE_D0B3C }}'
+      repo_token: ${{ secrets.GITHUB_TOKEN }}
+      firebase_service_account: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PERSONALWEBSITE_D0B3C }}
     #       
     # needs: [test-build]
     # name: Deploy
