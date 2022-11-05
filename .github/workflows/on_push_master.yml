@@ -15,8 +15,6 @@ jobs:
     name: Deploy
     uses: ./.github/workflows/workflow_deploy_firebase.yml
     with:
-      repo_token: '${{ secrets.GITHUB_TOKEN }}'
-      firebase_service_account: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PERSONALWEBSITE_D0B3C }}'
       version: ${{ github.sha }}
       run_id: github_run_${{ github.run_id }}
       channel_id: live
