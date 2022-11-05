@@ -11,22 +11,26 @@ jobs:
   #   uses: ./.github/workflows/workflow_test.yml
 
   deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - run: yarn && npm run build
-      - uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PERSONALWEBSITE_D0B3C }}'
-          channelId: live
-          projectId: personalwebsite-d0b3c
-    # needs: [test-build]
-    # name: Deploy
-    # uses: ./.github/workflows/workflow_deploy_firebase.yml
-    # with:
-    #   version: ${{ github.sha }}
-    #   run_id: github_run_${{ github.run_id }}
-    #   project_id: personalwebsite-d0b3c
-    #   channel_id: live
+    needs: [test-build]
+    name: Deploy
+    uses: ./.github/workflows/workflow_deploy_firebase.yml
+    with:
+      repo_token: '${{ secrets.GITHUB_TOKEN }}'
+      firebase_service_account: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PERSONALWEBSITE_D0B3C }}'
+      version: ${{ github.sha }}
+      run_id: github_run_${{ github.run_id }}
+      channel_id: live
+      project_id: personalwebsite-d0b3c
+    # runs-on: ubuntu-latest
+    # steps:
+    #   - uses: actions/checkout@v2
+    #   - run: yarn && npm run build
+    #   - uses: FirebaseExtended/action-hosting-deploy@v0
+    #     with:
+    #       repoToken: '${{ secrets.GITHUB_TOKEN }}'
+    #       firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PERSONALWEBSITE_D0B3C }}'
+    #       channelId: live
+    #       projectId: personalwebsite-d0b3c
+
+
 
