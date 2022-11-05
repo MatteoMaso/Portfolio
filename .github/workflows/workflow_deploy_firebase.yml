@@ -30,7 +30,7 @@ jobs:
       - run: yarn && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ input.repo_token }}'
+          repoToken: '${{ inputs.repo_token }}'
           firebaseServiceAccount: '${{ inputs.firebase_service_account }}'
           channelId: ${{ inputs.channel_id }}
           projectId: ${{ inputs.project_id }}
