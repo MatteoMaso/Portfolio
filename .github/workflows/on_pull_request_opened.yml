@@ -21,4 +21,5 @@ jobs:
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PERSONALWEBSITE_D0B3C }}'
+          channelId: preview
           projectId: personalwebsite-d0b3c
