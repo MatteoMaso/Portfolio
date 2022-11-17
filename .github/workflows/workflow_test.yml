@@ -21,7 +21,7 @@ jobs:
           node-version: '${{ env.NVMRC }}'
 
       - name: Install dependencies
-        run: yarn install
+        run: npm install
 
       - name: Run build
         run: npm run build
