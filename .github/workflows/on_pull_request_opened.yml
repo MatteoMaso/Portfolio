@@ -5,21 +5,24 @@ on:
     types: [opened, synchronize]
 
 jobs:
-  test-build:
-    name: Test
-    uses: ./.github/workflows/workflow_test.yml
+  # test-build:
+  #   name: Test
+  #   uses: ./.github/workflows/workflow_test.yml
 
   deploy:
     if: >-
       github.event.pull_request.user.login != 'octobot' &&
       github.event.pull_request.user.login != 'dependabot[bot]' &&
       '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
-    needs: [test-build]
+    # needs: [test-build]
     name: Deploy
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: yarn && npm run build
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm i && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'

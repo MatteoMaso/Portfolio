@@ -1,15 +1,25 @@
 ## 🚀 Quick start
 
-1. **Create a Gatsby site.**
+1. **Setup node environment**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+    run:
 
     ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    nvm use
     ```
 
-2. **Start developing.**
+    which will install/switch to the node version specified in `.nvmrc`
+    be sure to have nvm installed in your machine.
+
+2. **Install dependency**
+
+    run:
+
+    ```shell
+    npm install
+    ```
+
+3. **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
@@ -17,12 +27,6 @@
     cd my-gatsby-site/
     npm run develop
     ```
-
-3. **Open the code and start customizing!**
-
-    Your site is now running at <http://localhost:8000>!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
 
 4. **Learn more**
 

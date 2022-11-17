@@ -7,16 +7,16 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-sitemap",
-    {
-      resolve: 'gatsby-plugin-google-gtag',
-      options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
-        trackingIds: [
-          "G-EZTBZWNH4N"
-          //"AW-CONVERSION_ID", // Google Ads / Adwords / AW
-        ],
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-google-gtag',
+    //   options: {
+    //     // You can add multiple tracking ids and a pageview event will be fired for all of them.
+    //     trackingIds: [
+    //       "G-EZTBZWNH4N"
+    //       //"AW-CONVERSION_ID", // Google Ads / Adwords / AW
+    //     ],
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
