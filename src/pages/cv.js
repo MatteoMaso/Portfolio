@@ -13,7 +13,7 @@ const CV = () => {
                 </div>
             </div>
             <div className={btnRow}>
-                <a href={cvPDF}download><button className={button} >Download</button></a>{` `}
+                <a href={cvPDF}download><button className={button}>Download</button></a>{` `}
             </div>
         </Layout>
     )

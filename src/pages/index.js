@@ -1,59 +1,34 @@
 import * as React from "react"
 import Layout from "../components/layout"
-import { cvLeftColumn, littleCv, btn, rowColored, textIntro, bigName, avatar, rowIntro, columnLeftIntro, columnRightIntro } from "../styles/index.module.css"
-import Picture from "../images/profileBlue.webp" 
-import CV from "../images/cvlittle.webp" 
-
-const titleName = {
-  fontSize: 30,
-}
-
-const heyThere = {
-  fontSize: 25,
-  marginTop: 5,
-  marginBottom: 5
-}
-
-const textIntroStyle = {
-  fontSize: 20,
-  letterSpacing: 2,
-  marginTop: 10,
-  marginBottom: 5
-}
-
-const whiteText = {
-  fontSize: 30,
-  color: "white",
-  textAlignment: "left"
-}
 
 const IndexPage = () => {
   return (
     <Layout pageTitle="Portfolio">
-      <div>
-        <p style={titleName}  className={bigName}>  @MatteoMaso</p>
+      <div className="container mx-auto md:mt-11 mt-14 p-2">
+        <p className="text-4xl text-center">@MatteoMaso</p>
       </div>
-      <div className={rowIntro}>
-        <div className={columnLeftIntro}>
-          <p style={heyThere}>Hey there <span role="img" aria-label="hand waveing" >&#128075;</span></p>
-          <p style={textIntroStyle} className={textIntro} >
-            Inspired by science to improve people’s life and the
-            environment, I’m a software engineer with a wide interest
-            range and a background in fast prototyping tech solutions.
-          </p>
-        </div>
-        <div className={columnRightIntro}>
-          <img className={avatar} loading="lazy" alt="" src={Picture}/>
+
+      <div className="container w-full p-2 mt-1">
+        <div className="p-2 grid grid-cols-1 place-items-center">
+          <div className="md:w-2/5 m-6">
+            <h2 className="text-2xl" >Hey there <span role="img" aria-label="hand waveing" >&#128075;</span></h2>
+            <p className="text-justify text-xl tracking-wider mt-5 mb-3">
+              Inspired by science to improve people’s life and the
+              environment, I’m a software engineer with a wide interest
+              range and a background in fast prototyping tech solutions.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className={rowColored} >
-        <div className={cvLeftColumn}>
-          <p style={whiteText}>Take a look at my career path</p>
-          <a href="/cv" > <button className={btn}>CV &#8594;</button> </a>
-        </div>
-        <div>
-          <img className={littleCv} loading="lazy" alt="" src={CV}/>
+      <div className="container md:rounded-md  w-screen bg-blue-700 my-5">
+        <div className="p-2 grid grid-cols-1 place-items-center">
+          <div className="md:w-2/5 m-6 text-white text-3xl text-center tracking-wider">
+            <h2>Take a look at my career path</h2>
+            <div className="flex justify-center">
+              <a href="/cv" className="border-white border-2 hover:shadow-2xl rounded-md m-5 md:w-1/2 w-2/3 p-1"><h2>CV</h2></a>
+            </div>
+          </div>
         </div>
       </div>
     </Layout>
