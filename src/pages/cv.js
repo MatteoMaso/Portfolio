@@ -1,8 +1,8 @@
 import * as React from 'react'
 import Layout from '../components/layout'
 import { cvStyle, sheets, sheetsContainer, cvContainer, btnRow, button} from '../styles/cv.module.css'
-import cv from '../images/cv.svg'
-import cvPDF from '../images/cv.pdf'
+import cv from '../images/cv1.svg'
+import cvPDF from '../images/cv1.pdf'
 
 const CV = () => {
     return (
