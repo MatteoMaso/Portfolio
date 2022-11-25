@@ -32,5 +32,19 @@ module.exports = {
         legacy: false, // this will not add apple-touch-icon links to <head>
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: `blog-posts`,
+    //     path: `${__dirname}/src/blog-posts`,
+    //   },
+    // },
   ],
 };
