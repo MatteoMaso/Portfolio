@@ -4,10 +4,6 @@ import Layout from "../components/layout"
 const IndexPage = () => {
   return (
     <Layout pageTitle="Portfolio">
-      <div className="container mx-auto md:mt-11 mt-14 p-2">
-        <p className="text-4xl text-center">@MatteoMaso</p>
-      </div>
-
       <div className="container w-full p-2 mt-1">
         <div className="p-2 grid grid-cols-1 place-items-center">
           <div className="md:w-2/5 m-6">
