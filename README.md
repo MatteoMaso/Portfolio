@@ -1,10 +1,3 @@
-
-# TODO
-
-- [ ] unifing colors
-- [ ] unifing button layout to be reusable
-- [ ] move navigation bar somewhere else under the name for example
-
 # 🚀 Quick start
 
 1. **Setup node environment**
