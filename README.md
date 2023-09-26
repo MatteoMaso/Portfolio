@@ -25,7 +25,7 @@
 
     ```shell
     cd my-gatsby-site/
-    npm run develop
+    npm run dev
     ```
 
 4. **Learn more**
