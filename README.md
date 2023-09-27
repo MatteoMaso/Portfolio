@@ -1,51 +1,36 @@
 # 🚀 Quick start
 
-1. **Setup node environment**
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-    run:
+## Getting Started
 
-    ```shell
-    nvm use
-    ```
+First, run the development server:
 
-    which will install/switch to the node version specified in `.nvmrc`
-    be sure to have nvm installed in your machine.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-2. **Install dependency**
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-    run:
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-    ```shell
-    npm install
-    ```
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-3. **Start developing.**
+## Learn More
 
-    Navigate into your new site’s directory and start it up.
+To learn more about Next.js, take a look at the following resources:
 
-    ```shell
-    cd my-gatsby-site/
-    npm run dev
-    ```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-4. **Learn more**
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## Deploy on Vercel
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## Hosting
-
-Hosting: firebase, or personal project: ```personalwebsite-d0b3c```
-
-On PR open, it will be build using an action, then deployed to firebase preview. Link available on PR description once is done.
-
-On merge to master deploy to firebase main domain.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
