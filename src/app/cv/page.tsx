@@ -12,7 +12,7 @@ export default function CVPage() {
           </div>
         </div>
       </div>
-      <div className='w-full bg-blue-700 sticky bottom-0'>
+      <div className='w-full bg-blue-700 sticky bottom-0 rounded-md'>
         <div className='grid grid-cols-1 place-items-center p-3'>
           <WhiteButton btnContent="Download" btnRef="cv1.pdf"/>
         </div>
