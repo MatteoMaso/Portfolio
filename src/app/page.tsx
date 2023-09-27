@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from '../components/home';
-import '../styles/globals.css';
+import '@/styles/globals.css'
 
 export default function IndexPage() {
   return (

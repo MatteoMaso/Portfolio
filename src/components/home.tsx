@@ -1,27 +1,12 @@
 import React from 'react';
 import WhiteButton from './white-button'
-import Link from 'next/link'
+import Header from './header';
 
 function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <title>Matteo Maso</title>
-      <div className="h-1.5 bg-blue-700 absolute top-0 left-0 right-0"/>
-      <div className="top">
-        <div className="container mx-auto md:mt-11 mt-14 p-2 text-gray-700">
-          <p className="text-3xl text-center">@MatteoMaso</p>
-        </div>
-        <div className="container mx-auto md:mt-1 mt-1 p-2">
-          <ul className="flex justify-center text-2xl text-gray-500">
-            <li className="mx-2 p-2 hover:transition-colors">
-              <Link href="/">./home</Link>
-            </li>
-            <li className="mx-2 p-2">
-              <Link href="/cv">./cv</Link>
-            </li>  
-          </ul>
-        </div>
-      </div>
+      <Header />
       
       <div className="container w-full p-2 mt-1">
         <div className="p-2 grid grid-cols-1 place-items-center">
