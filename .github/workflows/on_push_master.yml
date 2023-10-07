@@ -9,23 +9,3 @@ jobs:
   test-build:
     name: Test
     uses: ./.github/workflows/workflow_test.yml
-
-  # deploy:
-  #   needs: [test-build]
-  #   name: Deploy
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #     - uses: actions/setup-node@v3
-  #       with:
-  #         node-version: 18
-  #     - run: npm i && npm run build
-  #     - uses: FirebaseExtended/action-hosting-deploy@v0
-  #       with:
-  #         repoToken: '${{ secrets.GITHUB_TOKEN }}'
-  #         firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PERSONALWEBSITE_D0B3C }}'
-  #         channelId: live
-  #         projectId: personalwebsite-d0b3c
-
-
-
