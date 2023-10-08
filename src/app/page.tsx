@@ -1,10 +1,18 @@
 import React from 'react';
 import Home from '../components/home';
 import '@/styles/globals.css'
+import Header from '@/components/header';
+import type { Metadata } from 'next'
 
-export default function IndexPage() {
+export const metadata: Metadata = {
+  title: 'Matteo Maso',
+  description: 'Matteo Maso\'s personal website',
+}
+
+export default function HomePage() {
   return (
     <div>
+      <Header />
       <Home />
     </div>
   );

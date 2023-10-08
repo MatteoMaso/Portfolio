@@ -1,12 +1,16 @@
 import Header from "@/components/header"
 import '@/styles/globals.css'
+import { Metadata } from "next"
 import * as React from "react"
 
-export default function NotFound() {
-  // TODO: Add a 404 page nicer than this
+export const metadata: Metadata = {
+  title: '404',
+  description: '404',
+}
+
+export default function NotFoundPage() {
   return (
     <div className="h-screen">
-      <title>404</title>
       <Header />
       <div className="flex-grow">
         <div className="h-full flex items-center justify-center mt-60">
