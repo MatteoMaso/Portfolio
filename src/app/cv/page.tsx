@@ -4,7 +4,6 @@ import React from 'react';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import '@/styles/cv.css'
-import '@/styles/globals.css'
 
 export const metadata: Metadata = {
   title: 'Matteo Maso - CV',
