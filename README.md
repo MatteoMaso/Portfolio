@@ -32,3 +32,7 @@ The project is currently deployed on [Netlify](https://www.netlify.com/) using a
 ## Style
 
 It uses [tailwind](https://tailwindcss.com/) and `styles/*.css` for more custom css.
+
+## Analytics
+
+We are using google analytics to track overall user visit - [check out](https://analytics.google.com/analytics/web/?hl=de&pli=1#/p220905563/realtime/overview?params=_u..nav%3Dmaui).
