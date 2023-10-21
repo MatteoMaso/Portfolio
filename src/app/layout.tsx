@@ -1,5 +1,7 @@
 import '@/styles/globals.css'
 // import AnalyticsProvider from '@/components/analytics'
+import { Analytics } from '@vercel/analytics/react';
+
 
 export default function RootLayout({
   children,
@@ -13,6 +15,7 @@ export default function RootLayout({
           <AnalyticsProvider />
         ) : null } */}
         {children}
+        <Analytics /> 
       </body>
     </html>
   )
