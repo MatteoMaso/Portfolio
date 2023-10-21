@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderItem from './HeaderItem';
+import HeaderItem from '@/components/headerItem';
 
 export default function Header() {
     return (
