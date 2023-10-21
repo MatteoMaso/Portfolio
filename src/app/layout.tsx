@@ -1,5 +1,5 @@
 import '@/styles/globals.css'
-import AnalyticsProvider from '@/components/analytics'
+// import AnalyticsProvider from '@/components/analytics'
 
 export default function RootLayout({
   children,
@@ -9,9 +9,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        { process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
+        {/* { process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
           <AnalyticsProvider />
-        ) : null }
+        ) : null } */}
         {children}
       </body>
     </html>
