@@ -1,24 +1,23 @@
 import React from 'react';
-import Link from 'next/link'
+import HeaderItem from './HeaderItem';
 
 export default function Header() {
     return (
         <div>
-            <div className="h-1.5 bg-blue-700 absolute top-0 left-0 right-0"/>
-            <div className="top">
-            <div className="container mx-auto md:mt-20 mt-6 p-2 text-gray-700">
-                <p className="text-3xl text-center">@MatteoMaso</p>
-            </div>
-            <div className="container mx-auto md:mt-1 mt-1 p-2">
-                <ul className="flex justify-center text-2xl text-gray-500">
-                <li className="mx-1 p-2 hover:transition-colors">
-                    <Link href="/">./home</Link>
-                </li>
-                <li className="mx-1 p-2">
-                    <Link href="/cv">./cv</Link>
-                </li>  
-                </ul>
-            </div>
+            {/* Blue bar on top */}
+            <div className='bg-blue-700 h-2'/>
+
+            {/* Name and bar in the center */}
+            <div className='flex justify-center mt-14 mb-4' >
+                <div>
+                    <div className='p-2 text-4xl text-gray-700'>
+                        <p>@MatteoMaso</p>
+                    </div>
+                    <div className='flex justify-between p-2 text-2xl text-gray-400 mx-9'>
+                        <HeaderItem params={{href: '/', text: './home'}}/>
+                        <HeaderItem params={{href: '/cv', text: './cv'}}/>
+                    </div>
+                </div>
             </div>
         </div>
     );

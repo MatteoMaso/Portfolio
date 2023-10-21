@@ -1,5 +1,4 @@
 import { WhiteButton } from '@/components/button/white-button';
-import Header from '@/components/header';
 import React from 'react';
 import Image from 'next/image';
 import { Metadata } from 'next';
@@ -13,7 +12,6 @@ export const metadata: Metadata = {
 export default function CVPage() {
   return (
     <div>
-      <Header />
       <div className="flex flex-col mx-auto">
         <div className='md:p-9 px-1 py-5 md:m-20 m-0'>
           <div className='sheets'>
