@@ -1,7 +1,6 @@
-import { WhiteButton } from '@/components/button/white-button';
-import React from 'react';
-import Image from 'next/image';
+import { WhiteButton } from '@/components/button/WhiteButton';
 import { Metadata } from 'next';
+import Image from 'next/image';
 import '@/styles/cv.css'
 
 export const metadata: Metadata = {
