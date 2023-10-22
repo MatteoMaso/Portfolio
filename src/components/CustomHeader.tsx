@@ -1,7 +1,6 @@
-import React from 'react';
-import HeaderItem from '@/components/headerItem';
+import HeaderItem from '@/components/HeaderItem';
 
-export default function Header() {
+export default function CustomHeader() {
     return (
         <div>
             {/* Blue bar on top */}
