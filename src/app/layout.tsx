@@ -10,11 +10,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+
         {/* Header */}
         <CustomHeader />
 
         {children}
-  
+        
         {/* Analytics */}
         <Analytics /> 
       </body>
