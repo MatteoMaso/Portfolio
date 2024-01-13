@@ -18,21 +18,17 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about Next.js, consider the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js Documentation](https://nextjs.org/docs) - This will help you understand Next.js features and APIs.
+- [Learn Next.js](https://nextjs.org/learn) - This is an interactive tutorial on Next.js.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Feel free to check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deployment
+## Styling
 
-The project is currently deployed on [Netlify](https://www.netlify.com/) using a github integration.
+This project uses [Tailwind CSS](https://tailwindcss.com/) for styling. Additional custom CSS can be found in the `styles/*.css` files.
 
-## Style
+## Deployment and Analytics
 
-It uses [tailwind](https://tailwindcss.com/) and `styles/*.css` for more custom css.
-
-## Analytics
-
-We are using google analytics to track overall user visit - [check out](https://analytics.google.com/analytics/web/?hl=de&pli=1#/p220905563/realtime/overview?params=_u..nav%3Dmaui).
+The project is hosted on Vercel. You can [check it out here](https://vercel.com/matteo-masos-projects/portfolio) for analytics insights.
