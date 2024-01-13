@@ -14,6 +14,8 @@ export default function RootLayout({
         <CustomHeader />
 
         {children}
+  
+        {/* Analytics */}
         <Analytics /> 
       </body>
     </html>
