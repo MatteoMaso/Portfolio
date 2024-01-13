@@ -1,6 +1,5 @@
 import CustomHeader from '@/components/CustomHeader';
 import { Analytics } from '@vercel/analytics/react';
-// import AnalyticsProvider from '@/components/analytics'
 import '@/styles/globals.css'
 
 export default function RootLayout({
@@ -14,9 +13,6 @@ export default function RootLayout({
         {/* Header */}
         <CustomHeader />
 
-        {/* { process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS ? (
-          <AnalyticsProvider />
-        ) : null } */}
         {children}
         <Analytics /> 
       </body>
