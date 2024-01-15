@@ -1,5 +1,6 @@
 import CustomHeader from '@/components/CustomHeader';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import '@/styles/globals.css'
 
 export default function RootLayout({
@@ -18,6 +19,9 @@ export default function RootLayout({
         
         {/* Analytics */}
         <Analytics /> 
+
+        {/* Speed Insights */}
+        <SpeedInsights/>
       </body>
     </html>
   )
