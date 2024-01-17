@@ -29,9 +29,9 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="container sm:rounded-md  w-screen bg-blue-700 my-5">
+        <div className="container w-full my-5">
           <div className="p-2 grid grid-cols-1 place-items-center">
-            <div className="md:w-3/5 m-3 text-white text-3xl text-center grid grid-cols-1 place-items-center tracking-wider">
+            <div className="md:w-3/5 m-3 p-4 sm:rounded-md text-white text-3xl text-center grid grid-cols-1 place-items-center tracking-wider bg-blue-700">
               <h2 className="hidden md:block">
                 Take a look at my career path
               </h2>
