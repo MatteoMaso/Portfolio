@@ -16,7 +16,7 @@ export default function HomePage() {
               <h2 className="text-3xl">Hey there <span role="img" aria-label="hand waveing">&#128075;</span></h2>
               <p className="py-5">
                 My name is Matteo Maso. 
-                I&apos;m born as a curious problem solver and trained as a software engineer.
+                I was born as a curious problem solver and trained as a software engineer.
               </p>
               <p className="pb-5">
                 I&apos;m currently developing Backend and Cloud applications 
