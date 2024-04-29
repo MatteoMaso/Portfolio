@@ -40,8 +40,9 @@ export default function CVPage() {
                         companyName={exp.companyName}
                         location={exp.location}
                         logo={exp.logo}
-                        children={exp.children}
-                      />
+                      >
+                      {exp.children}
+                      </ExperienceItem>
                     ))}
                   <SectionTitle text='PROJECT'/>
                     {projects.map((project, index) => (
@@ -53,8 +54,9 @@ export default function CVPage() {
                         companyName={project.companyName}
                         location={project.location}
                         logo={project.logo}
-                        children={project.children}
-                      />
+                      >
+                      {project.children}
+                      </ExperienceItem>
                     ))}
                   <SectionTitle text='EDUCATION'/>
                 </div>
