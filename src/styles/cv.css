@@ -5,6 +5,23 @@
     position: relative;
 }
 
+.title {
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+.subtitle {
+    font-size: x-large;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.sectiontitle {
+    font-size: large;
+    font-style: italic;
+    margin-top: 20px;
+}
+
 @media (min-width: 768px) {
     .sheets:before, .sheets:after {
         content: "";

@@ -1,7 +1,7 @@
 import { WhiteButton } from '@/components/button/WhiteButton';
 import { Metadata } from 'next';
-import Image from 'next/image';
 import '@/styles/cv.css'
+import CvPlaceHolder from '@/components/cv/Placeholder';
 
 export const metadata: Metadata = {
   title: 'Matteo Maso - CV',
@@ -13,9 +13,7 @@ export default function CVPage() {
     <div>
       <div className="flex flex-col mx-auto">
         <div className='md:p-9 px-1 py-5 md:m-20 m-0'>
-          <div className='sheets'>
-            <Image loading="lazy" alt="" className='w-full' width={100} height={100} src="cv1.svg"></Image>
-          </div>
+          <CvPlaceHolder/>
         </div>
         <div className='w-full bg-blue-700 sticky bottom-0'>
           <div className='grid grid-cols-1 place-items-center p-3'>
