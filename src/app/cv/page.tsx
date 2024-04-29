@@ -28,7 +28,7 @@ export default function CVPage() {
                   <SubTitle text='Software Engineer'/>
                   <SectionTitle text='SUMMARY'/>
                   <div>I was born a curious problem solver and trained as a software engineer.
-        For the past 2.5 years I've helped SCS to scale and for 6 month I have been the project leader for the development of the company new IoT platform.
+        For the past 2.5 years I&apos;ve helped SCS to scale and for 6 month I have been the project leader for the development of the company new IoT platform.
         Previously, I developed five applications for clinical research projects in the healthcare industry. In 2020 I co-founded a startup in the lighting design sector.</div>
                   <SectionTitle text='EXPERIENCE'/>
                     {experiences.map((exp, index) => (
