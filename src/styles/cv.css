@@ -18,8 +18,10 @@
 
 .sectiontitle {
     font-size: large;
-    font-style: italic;
     margin-top: 20px;
+    font-stretch: expanded;
+    color: gray;
+    font-weight: 200;
 }
 
 @media (min-width: 768px) {
