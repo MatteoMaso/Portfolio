@@ -8,6 +8,10 @@ import ExperienceItem from '@/components/cv/ExperienceItem';
 import CVPlaceHolder from './placeHolder';
 import { experiences } from './data/experiences';
 import { projects } from './data/projects';
+import { educations } from './data/education';
+import RightSideSection from '@/components/cv/RightSideSection';
+import RightSideSubSection from '@/components/cv/RightSideSection copy';
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: 'Matteo Maso - CV',
@@ -21,8 +25,8 @@ export default function CVPage() {
       <div className="flex flex-col mx-auto">
         <div className='md:p-9 px-1 py-5 md:m-14 m-0'>
           <CVPlaceHolder>
-            <div className='grid grid-cols-3 gap-0'>
-              <div className='col-span-2'>
+            <div className='grid sm:grid-cols-3 grid-cols-1 gap-0'>
+              <div className='sm:col-span-2'>
                 <div className='grid grid-cols-1 m-10'>
                   <Title text='Matteo Maso'/>
                   <SubTitle text='Software Engineer'/>
@@ -59,10 +63,76 @@ export default function CVPage() {
                       </ExperienceItem>
                     ))}
                   <SectionTitle text='EDUCATION'/>
+                    {educations.map((education, index) => (
+                      <ExperienceItem 
+                        key={index}
+                        title={education.title}
+                        start={education.start}
+                        end={education.end ?? 'Present'}
+                        companyName={education.companyName}
+                        location={education.location}
+                        logo={education.logo}
+                      >
+                      {education.children}
+                      </ExperienceItem>
+                    ))}
                 </div>
               </div>
               <div className='bg-blue-200'>
-                02
+                <div className='sm:pt-64 pt-12'>
+                  <div className='flex flex-row justify-center'>
+                    <div className="m-2 flex justify-center items-center">
+                      <a href='https://www.credly.com/badges/34835540-4710-4243-86f0-405ab153841a/public_url' className="p-6 duration-300 flex justify-center items-center">
+                        <Image
+                          loading="lazy"
+                          src={'/aws-certified-solutions-architect-associate.png'}
+                          width={132}
+                          height={132}
+                          quality={100}
+                          alt={"logo"}>
+                        </Image>
+                      </a>
+                    </div>
+                    <div className="m-2 flex justify-center items-center">
+                      <a href='https://www.credly.com/badges/608fda24-a3b3-459d-983b-c553d7dc4835/public_url' className="p-6 duration-300 flex justify-center items-center">
+                        <Image
+                          loading="lazy"
+                          src={'/aws-certified-cloud-practitioner.png'}
+                          width={132}
+                          height={132}
+                          quality={100}
+                          alt={"logo"}>
+                        </Image>
+                      </a>
+                    </div>
+                  </div>
+                  <RightSideSection title='Skills & Competencies'>
+                    <RightSideSubSection title='Tech'>
+                      <li>Typescript, C#, Python</li>
+                      <li>NestJS, PostgreSQL</li>
+                      <li>Swagger docs, openAPI</li>
+                      <li>Jest, e2e-test, MySQL</li>
+                      <li>Blockchain</li>
+                      <li>Git, Linux, Docker</li>
+                      <li>Security & Privacy</li>
+                    </RightSideSubSection>
+                    <RightSideSubSection title='Transversal'>
+                      <li>360 vision</li>
+                      <li>Value driven</li>
+                      <li>Teamwork</li>
+                      <li>Design Thinking, OKR</li>
+                    </RightSideSubSection>
+                  </RightSideSection>
+                  <RightSideSection title='Languages'>
+                    <li>English (professional)</li>
+                    <li>Italian (native)</li>
+                  </RightSideSection>
+                  <RightSideSection title='External Courses'>
+                    <li>AWS - Cloud Practitioner</li>
+                    <li>AWS - Solution Architect associate</li>
+                    <li>Applied Web Application security, Erasmus Online</li>
+                  </RightSideSection>
+                </div>
               </div>
             </div>
           </CVPlaceHolder>
