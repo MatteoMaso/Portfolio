@@ -75,18 +75,16 @@ export default function ExperienceItem({title, start, end, companyName, location
   return (
     <div className="experienceitem mb-7">
       <div className='grid grid-cols-1'>
-        <div className="flex font-medium">
+        <div className="sm:flex font-medium">
           <p className="mr-2 text-2xl">{title},</p>
           <p className="text-2xl">{companyName}</p>
         </div>
-        <div className="flex text-gray-500">
+        <div className="flex text-gray-500 text-lg">
           <p className="mr-3">{start} - {end},</p>
           <p>{location}</p>
         </div>
       </div> 
-      <div>
-        <ul className="list-disc list-inside">{items}</ul>
-      </div>
+      <ul className="list-disc list-outside ml-4">{items}</ul>
     </div>
   )
 };
