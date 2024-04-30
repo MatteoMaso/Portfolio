@@ -13,5 +13,3 @@ export const projects: Experience[] = [{
   ],
 },
 ]
-
-

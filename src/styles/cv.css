@@ -17,11 +17,13 @@
 }
 
 .sectiontitle {
-    font-size: large;
-    margin-top: 20px;
     font-stretch: expanded;
     color: gray;
-    font-weight: 200;
+    font-weight:150;
+}
+
+.li {
+    margin: 2px;
 }
 
 @media (min-width: 768px) {
