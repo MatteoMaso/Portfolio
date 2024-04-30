@@ -10,8 +10,10 @@ import { experiences } from './data/experiences';
 import { projects } from './data/projects';
 import { educations } from './data/education';
 import RightSideSection from '@/components/cv/RightSideSection';
-import RightSideSubSection from '@/components/cv/RightSideSection copy';
+import RightSideSubSection from '@/components/cv/RightSideSubSection';
 import Image from "next/image";
+import SkillsSection from '@/components/cv/Skills';
+import { skills } from './data/skills';
 
 export const metadata: Metadata = {
   title: 'Matteo Maso - CV',
@@ -107,15 +109,11 @@ export default function CVPage() {
                     </div>
                   </div>
                   <RightSideSection title='Skills & Competencies'>
-                    <RightSideSubSection title='Tech'>
-                      <li>Typescript, C#, Python</li>
-                      <li>NestJS, PostgreSQL</li>
-                      <li>Swagger docs, openAPI</li>
-                      <li>Jest, e2e-test, MySQL</li>
-                      <li>Blockchain</li>
-                      <li>Git, Linux, Docker</li>
-                      <li>Security & Privacy</li>
-                    </RightSideSubSection>
+                    <SkillsSection>
+                      {skills.map((skill, index) => (
+                        <div className='mr-2 my-1 border-black border-2 p-1 px-2 hover:bg-blue-300 hover:animate-bounce transition-colors duration-300 rounded-lg' key={index} >{skill}</div>
+                      ))}
+                    </SkillsSection>
                     <RightSideSubSection title='Transversal'>
                       <li>360 vision</li>
                       <li>Value driven</li>
