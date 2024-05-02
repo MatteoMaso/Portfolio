@@ -84,7 +84,7 @@ export default function CVPage() {
                 <div className='sm:pt-64 pt-12'>
                   <div className='flex flex-row justify-center'>
                     <div className="m-2 flex justify-center items-center">
-                      <a href='https://www.credly.com/badges/34835540-4710-4243-86f0-405ab153841a/public_url' className="p-6 duration-300 flex justify-center items-center">
+                      <a href='https://www.credly.com/badges/34835540-4710-4243-86f0-405ab153841a/public_url' className="p-6 duration-300 flex justify-center items-center hover:scale-125">
                         <Image
                           loading="lazy"
                           src={'/aws-certified-solutions-architect-associate.png'}
@@ -96,7 +96,7 @@ export default function CVPage() {
                       </a>
                     </div>
                     <div className="m-2 flex justify-center items-center">
-                      <a href='https://www.credly.com/badges/608fda24-a3b3-459d-983b-c553d7dc4835/public_url' className="p-6 duration-300 flex justify-center items-center">
+                      <a href='https://www.credly.com/badges/608fda24-a3b3-459d-983b-c553d7dc4835/public_url' className="p-6 duration-300 flex justify-center items-center hover:scale-125">
                         <Image
                           loading="lazy"
                           src={'/aws-certified-cloud-practitioner.png'}
@@ -122,8 +122,8 @@ export default function CVPage() {
                     </RightSideSubSection>
                   </RightSideSection>
                   <RightSideSection title='Languages'>
-                    <li>English (professional)</li>
-                    <li>Italian (native)</li>
+                    <li>English (professional) 🇬🇧</li>
+                    <li>Italian (native) 🇮🇹</li>
                   </RightSideSection>
                   <RightSideSection title='External Courses'>
                     <li>AWS - Cloud Practitioner</li>
