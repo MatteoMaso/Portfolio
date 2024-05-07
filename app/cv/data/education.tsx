@@ -1,4 +1,4 @@
-import { Experience } from "@/components/cv/ExperienceItem"
+import { Experience } from "../../components/cv/ExperienceItem"
 
 export const educations: Experience[] = [{
   title: 'MEng Computer Engineering',
