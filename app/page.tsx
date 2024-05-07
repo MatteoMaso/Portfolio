@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
-import { WhiteButton } from '@/components/button/WhiteButton';
-import { SocialIconButton } from '@/components/button/SocialIconButton';
+import { WhiteButton } from './components/button/WhiteButton';
+import { SocialIconButton } from './components/button/SocialIconButton';
 import { FaGithub, FaLinkedinIn, FaStackOverflow } from "react-icons/fa";
 
 export const metadata: Metadata = {

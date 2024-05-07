@@ -1,4 +1,4 @@
-import HeaderItem from '@/components/HeaderItem';
+import HeaderItem from './HeaderItem';
 
 export default function CustomHeader() {
     return (
