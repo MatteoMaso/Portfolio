@@ -1,18 +1,18 @@
-import { WhiteButton } from '../components/button/WhiteButton';
+import { WhiteButton } from '@/components/button/WhiteButton';
 import { Metadata } from 'next';
 import '@/styles/cv.css'
-import Title from '../components/cv/Title';
-import SubTitle from '../components/cv/SubTitle';
-import SectionTitle from '../components/cv/SectionTitle';
-import ExperienceItem from '../components/cv/ExperienceItem';
-import CVPlaceHolder from './placeHolder';
+import Title from '@/components/cv/Title';
+import SubTitle from '@/components/cv/SubTitle';
+import SectionTitle from '@/components/cv/SectionTitle';
+import ExperienceItem from '@/components/cv/ExperienceItem';
+import CVPlaceHolder from '@/components/cv/CVPlaceHolder';
 import { experiences } from './data/experiences';
 import { projects } from './data/projects';
 import { educations } from './data/education';
-import RightSideSection from '../components/cv/RightSideSection';
-import RightSideSubSection from '../components/cv/RightSideSubSection';
+import RightSideSection from '@/components/cv/RightSideSection';
+import RightSideSubSection from '@/components/cv/RightSideSubSection';
 import Image from "next/image";
-import SkillsSection from '../components/cv/Skills';
+import SkillsSection from '@/components/cv/Skills';
 import { skills } from './data/skills';
 
 export const metadata: Metadata = {

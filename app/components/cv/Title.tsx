@@ -1,9 +1,11 @@
+import styles from './cv.module.css';
+
 interface TitleContent {
   text: string;
 }
 
 export default function Title({text}: TitleContent) {
   return (
-    <div className="title">{text}</div>
+    <div className={styles.title}>{text}</div>
   );
 };
