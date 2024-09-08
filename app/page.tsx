@@ -21,8 +21,8 @@ export default function HomePage() {
                 I was born as a curious problem solver and trained as a software engineer.
               </p>
               <p className="pb-5">
-                I&apos;m currently developing Backend and Cloud applications 
-                at <a className="text-blue-700" href="https://sensirion-connected.com/" target="_blank" rel="noopener noreferrer">Sensirion Connected Solutions</a>.
+                I&apos;m currently working as Full-Stack engineer 
+                at <a className="text-blue-700" href="https://www.eterno.cloud/" target="_blank" rel="noopener noreferrer">Eterno Cloud</a>.
               </p>
               <p>
                 In life I love using technology to solve meaningful problem and I&apos;m always looking for new challenges.
